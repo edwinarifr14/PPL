@@ -86,6 +86,8 @@ Route::middleware('checkuser')->group(function() {
     Route::post('/user/produk', 'ProdukController@addUser');
 
     Route::get('/user/{id}/sukses', 'PesananController@sukses');
+    Route::get('/user/{id}/pengemasan', 'PesananController@pengemasan');
+    Route::get('/user/{id}/pengiriman', 'PesananController@pengiriman');
 
     Route::put('/user/{id}', 'PelangganController@update');
     Route::put('/user/saldo/{id}', 'TransaksiController@confSaldo');
